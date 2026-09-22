@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="word_widget_gold">#F8D370</color>
+    <color name="word_widget_primary">#F4F6FC</color>
+    <color name="word_widget_reading">#C9D2E7</color>
+    <color name="word_widget_muted">#9DA9C5</color>
+    <color name="word_widget_warning">#FF9B8E</color>
+    <color name="word_widget_warning_muted">#FFD0C9</color>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="word_widget_example_unavailable">등록된 예문이 없습니다.</string>
+    <string name="word_widget_example_number">예문 %1$d</string>
+    <string name="live_wallpaper_name">별빛 단어 잠금화면</string>
+    <string name="live_wallpaper_description">선택한 일본어 단어와 뜻을 오프라인으로 보여주는 별빛 단어 라이브 배경화면</string>
+    <string name="word_widget_name">별빛 단어 위젯</string>
+    <string name="word_widget_lockscreen_name">별빛 단어 · 잠금화면</string>
+    <string name="word_widget_home_name">별빛 단어 · 홈 화면</string>
+    <string name="word_widget_description">단어를 넘기고 북마크·외웠어요를 기록하는 위젯입니다. Galaxy 잠금화면 표시 여부는 One UI가 결정합니다.</string>
+    <string name="word_widget_previous">이전 단어</string>
+    <string name="word_widget_next">다음 단어</string>
+    <string name="word_widget_reset_timer">다음 단어 타이머 초기화</string>
+    <string name="word_widget_next_timer">다음 단어까지</string>
+    <string name="word_widget_timer_warning">곧 다음 단어</string>
+    <string name="word_widget_bookmark">북마크 전환</string>
+    <string name="word_widget_known">외웠어요로 표시</string>
+    <string name="word_widget_bookmark_label">북마크</string>
+    <string name="word_widget_bookmarked_label">북마크됨</string>
+    <string name="word_widget_known_label">외웠어요</string>
+    <string name="word_widget_known_countdown_label">외웠어요 · %1$d초</string>
+    <string name="word_widget_empty_title">표시할 잠금화면 단어가 없어요</string>
+    <string name="word_widget_empty_body">앱 설정의 ‘잠금화면 단어’에서 데모 범위를 선택해 주세요.</string>
+</resources>

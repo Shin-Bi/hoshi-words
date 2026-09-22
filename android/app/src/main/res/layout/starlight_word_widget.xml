@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/word_widget_background"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/widget_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/widget_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/word_widget_badge_background"
+                android:includeFontPadding="false"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="4dp"
+                android:text="데모 1"
+                android:textAppearance="@style/WordWidgetJapaneseText"
+                android:textColor="@color/word_widget_gold"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/widget_part_of_speech"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/word_widget_secondary_badge_background"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:maxWidth="128dp"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="4dp"
+                android:text="명사"
+                android:textAppearance="@style/WordWidgetKoreanText"
+                android:textColor="@color/word_widget_reading"
+                android:textSize="11sp"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/widget_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="1 / 128"
+                android:textAppearance="@style/WordWidgetJapaneseText"
+                android:textColor="@color/word_widget_muted"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/widget_reading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:text="ほし"
+            android:textAppearance="@style/WordWidgetJapaneseText"
+            android:textColor="@color/word_widget_reading"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/widget_word_navigation_row"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/widget_word"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="星"
+                android:textAppearance="@style/WordWidgetJapaneseText"
+                android:textColor="@android:color/white"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/widget_meaning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxLines="2"
+            android:text="별"
+            android:textAlignment="center"
+            android:textAppearance="@style/WordWidgetKoreanText"
+            android:textColor="@color/word_widget_primary"
+            android:textSize="16sp" />
+
+        <FrameLayout
+            android:id="@+id/widget_example_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/word_widget_example_background"
+            android:minHeight="48dp">
+
+            <ListView
+                android:id="@+id/widget_example_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:choiceMode="none"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:drawSelectorOnTop="false"
+                android:fadeScrollbars="true"
+                android:listSelector="@android:color/transparent"
+                android:overScrollMode="ifContentScrolls"
+                android:scrollbars="vertical" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/widget_timer_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/widget_timer_card"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/word_widget_timer_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp">
+
+                <ImageButton
+                    android:id="@+id/widget_previous"
+                    style="@style/WordWidgetIconAction"
+                    android:contentDescription="@string/word_widget_previous"
+                    android:src="@drawable/widget_ic_previous" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/widget_timer_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:text="@string/word_widget_next_timer"
+                            android:textAppearance="@style/WordWidgetKoreanText"
+                            android:textColor="@color/word_widget_muted"
+                            android:textSize="8sp" />
+
+                        <TextView
+                            android:id="@+id/widget_interval"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:background="@drawable/word_widget_interval_badge_background"
+                            android:includeFontPadding="false"
+                            android:paddingStart="5dp"
+                            android:paddingTop="2dp"
+                            android:paddingEnd="5dp"
+                            android:paddingBottom="2dp"
+                            android:text="30분"
+                            android:textAppearance="@style/WordWidgetKoreanText"
+                            android:textColor="@color/word_widget_reading"
+                            android:textSize="8sp" />
+                    </LinearLayout>
+
+                    <Chronometer
+                        android:id="@+id/widget_countdown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:textAppearance="@style/WordWidgetJapaneseText"
+                        android:textColor="@color/word_widget_gold"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/widget_reset_timer"
+                    style="@style/WordWidgetIconAction"
+                    android:background="@drawable/word_widget_timer_reset_background"
+                    android:contentDescription="@string/word_widget_reset_timer"
+                    android:src="@drawable/widget_ic_reset_timer" />
+
+                <ImageButton
+                    android:id="@+id/widget_next"
+                    style="@style/WordWidgetIconAction"
+                    android:contentDescription="@string/word_widget_next"
+                    android:src="@drawable/widget_ic_next" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/widget_timer_progress_container"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp">
+
+                <ProgressBar
+                    android:id="@+id/widget_timer_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:max="1000"
+                    android:progress="1000"
+                    android:progressDrawable="@drawable/word_widget_timer_progress" />
+
+                <ProgressBar
+                    android:id="@+id/widget_timer_progress_warning"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:max="1000"
+                    android:progress="1000"
+                    android:progressDrawable="@drawable/word_widget_timer_progress_warning"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/widget_bookmark"
+                style="@style/WordWidgetAction"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/word_widget_bookmark"
+                android:drawableStart="@drawable/widget_ic_bookmark"
+                android:drawablePadding="6dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/word_widget_bookmark_label" />
+
+            <FrameLayout
+                android:layout_width="6dp"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:id="@+id/widget_known"
+                style="@style/WordWidgetAction"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/word_widget_known"
+                android:drawableStart="@drawable/widget_ic_known"
+                android:drawablePadding="6dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/word_widget_known_label" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/widget_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@null"
+            android:src="@drawable/widget_ic_bookmark_filled" />
+
+        <TextView
+            android:id="@+id/widget_empty_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="@string/word_widget_empty_title"
+            android:textAppearance="@style/WordWidgetKoreanText"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/word_widget_empty_body"
+            android:textAppearance="@style/WordWidgetKoreanText"
+            android:textColor="@color/word_widget_muted"
+            android:textSize="13sp" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "3.0.0",
+  "documentType": "japaneseVocabulary",
+  "level": "n5",
+  "words": [
+    {
+      "id": "demo-star",
+      "lemma": "星",
+      "reading": "ほし",
+      "partOfSpeech": "noun",
+      "conjugationClass": "none",
+      "meanings": [
+        "별"
+      ],
+      "examples": [
+        {
+          "id": "demo-star-e1",
+          "original": "小さな星を見つけました。",
+          "ruby": "｜小《ちい》さな｜星《ほし》を｜見《み》つけました。",
+          "focusSurface": "星",
+          "literalTranslation": "작은 별을 발견했어요.",
+          "naturalTranslation": "작은 별을 발견했어요.",
+          "note": "공개 데모를 위해 새로 작성한 예문"
+        }
+      ],
+      "note": "새로 작성한 공개 데모 항목",
+      "tags": [
+        "demo"
+      ]
+    },
+    {
+      "id": "demo-sky",
+      "lemma": "空",
+      "reading": "そら",
+      "partOfSpeech": "noun",
+      "conjugationClass": "none",
+      "meanings": [
+        "하늘"
+      ],
+      "examples": [
+        {
+          "id": "demo-sky-e1",
+          "original": "窓から空を見ます。",
+          "ruby": "｜窓《まど》から｜空《そら》を｜見《み》ます。",
+          "focusSurface": "空",
+          "literalTranslation": "창문으로 하늘을 봐요.",
+          "naturalTranslation": "창문으로 하늘을 봐요.",
+          "note": "공개 데모를 위해 새로 작성한 예문"
+        }
+      ],
+      "note": "새로 작성한 공개 데모 항목",
+      "tags": [
+        "demo"
+      ]
+    }
+  ]
+}

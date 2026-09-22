@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Framework font resources are API 26+. API 24–25 receive a safe
+         system fallback while the v26 resource overrides these two styles. -->
+    <style name="WordWidgetJapaneseText">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="WordWidgetKoreanText">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="WordWidgetAction">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@drawable/word_widget_action_background</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:gravity">center</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/word_widget_primary</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="WordWidgetIconAction">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@drawable/word_widget_action_background</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+</resources>

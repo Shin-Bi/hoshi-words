@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#66C9D2E7">
+    <item android:drawable="@drawable/word_widget_timer_reset_surface" />
+</ripple>

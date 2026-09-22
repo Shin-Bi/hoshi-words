@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "3.0.0",
+  "documentType": "japaneseVocabulary",
+  "level": "n1",
+  "words": [
+    {
+      "id": "demo-book",
+      "lemma": "本",
+      "reading": "ほん",
+      "partOfSpeech": "noun",
+      "conjugationClass": "none",
+      "meanings": [
+        "책"
+      ],
+      "examples": [
+        {
+          "id": "demo-book-e1",
+          "original": "青い本を机に置きました。",
+          "ruby": "｜青《あお》い｜本《ほん》を｜机《つくえ》に｜置《お》きました。",
+          "focusSurface": "本",
+          "literalTranslation": "파란 책을 책상에 놓았어요.",
+          "naturalTranslation": "파란 책을 책상에 놓았어요.",
+          "note": "공개 데모를 위해 새로 작성한 예문"
+        }
+      ],
+      "note": "새로 작성한 공개 데모 항목",
+      "tags": [
+        "demo"
+      ]
+    },
+    {
+      "id": "demo-paper",
+      "lemma": "紙",
+      "reading": "かみ",
+      "partOfSpeech": "noun",
+      "conjugationClass": "none",
+      "meanings": [
+        "종이"
+      ],
+      "examples": [
+        {
+          "id": "demo-paper-e1",
+          "original": "紙に星を描きます。",
+          "ruby": "｜紙《かみ》に｜星《ほし》を｜描《か》きます。",
+          "focusSurface": "紙",
+          "literalTranslation": "종이에 별을 그려요.",
+          "naturalTranslation": "종이에 별을 그려요.",
+          "note": "공개 데모를 위해 새로 작성한 예문"
+        }
+      ],
+      "note": "새로 작성한 공개 데모 항목",
+      "tags": [
+        "demo"
+      ]
+    }
+  ]
+}

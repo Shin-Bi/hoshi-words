@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_example_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="12dp"
+    android:paddingTop="9dp"
+    android:paddingEnd="12dp"
+    android:paddingBottom="9dp">
+
+    <TextView
+        android:id="@+id/widget_example_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:text="예문 1"
+        android:textAppearance="@style/WordWidgetKoreanText"
+        android:textColor="@color/word_widget_gold"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/widget_example"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:includeFontPadding="false"
+        android:text="紙に星を描きます。"
+        android:textAppearance="@style/WordWidgetJapaneseText"
+        android:textColor="@color/word_widget_primary"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/widget_example_meaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:includeFontPadding="false"
+        android:text="이것은 별 하는 경험입니다."
+        android:textAppearance="@style/WordWidgetKoreanText"
+        android:textColor="@color/word_widget_muted"
+        android:textSize="12sp" />
+</LinearLayout>

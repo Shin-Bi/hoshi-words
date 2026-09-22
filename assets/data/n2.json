@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "3.0.0",
+  "documentType": "japaneseVocabulary",
+  "level": "n2",
+  "words": [
+    {
+      "id": "demo-tea",
+      "lemma": "お茶",
+      "reading": "おちゃ",
+      "partOfSpeech": "noun",
+      "conjugationClass": "none",
+      "meanings": [
+        "차"
+      ],
+      "examples": [
+        {
+          "id": "demo-tea-e1",
+          "original": "お茶を少し飲みます。",
+          "ruby": "お｜茶《ちゃ》を｜少《すこ》し｜飲《の》みます。",
+          "focusSurface": "お茶",
+          "literalTranslation": "차를 조금 마셔요.",
+          "naturalTranslation": "차를 조금 마셔요.",
+          "note": "공개 데모를 위해 새로 작성한 예문"
+        }
+      ],
+      "note": "새로 작성한 공개 데모 항목",
+      "tags": [
+        "demo"
+      ]
+    },
+    {
+      "id": "demo-water",
+      "lemma": "水",
+      "reading": "みず",
+      "partOfSpeech": "noun",
+      "conjugationClass": "none",
+      "meanings": [
+        "물"
+      ],
+      "examples": [
+        {
+          "id": "demo-water-e1",
+          "original": "小さなコップに水を入れます。",
+          "ruby": "｜小《ちい》さなコップに｜水《みず》を｜入《い》れます。",
+          "focusSurface": "水",
+          "literalTranslation": "작은 컵에 물을 담아요.",
+          "naturalTranslation": "작은 컵에 물을 담아요.",
+          "note": "공개 데모를 위해 새로 작성한 예문"
+        }
+      ],
+      "note": "새로 작성한 공개 데모 항목",
+      "tags": [
+        "demo"
+      ]
+    }
+  ]
+}

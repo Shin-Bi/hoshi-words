@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "3.0.0",
+  "documentType": "japaneseVocabulary",
+  "level": "n3",
+  "words": [
+    {
+      "id": "demo-road",
+      "lemma": "道",
+      "reading": "みち",
+      "partOfSpeech": "noun",
+      "conjugationClass": "none",
+      "meanings": [
+        "길"
+      ],
+      "examples": [
+        {
+          "id": "demo-road-e1",
+          "original": "この道は公園につながっています。",
+          "ruby": "この｜道《みち》は｜公園《こうえん》につながっています。",
+          "focusSurface": "道",
+          "literalTranslation": "이 길은 공원으로 이어져 있어요.",
+          "naturalTranslation": "이 길은 공원으로 이어져 있어요.",
+          "note": "공개 데모를 위해 새로 작성한 예문"
+        }
+      ],
+      "note": "새로 작성한 공개 데모 항목",
+      "tags": [
+        "demo"
+      ]
+    },
+    {
+      "id": "demo-flower",
+      "lemma": "花",
+      "reading": "はな",
+      "partOfSpeech": "noun",
+      "conjugationClass": "none",
+      "meanings": [
+        "꽃"
+      ],
+      "examples": [
+        {
+          "id": "demo-flower-e1",
+          "original": "入口に花を飾りました。",
+          "ruby": "｜入口《いりぐち》に｜花《はな》を｜飾《かざ》りました。",
+          "focusSurface": "花",
+          "literalTranslation": "입구에 꽃을 장식했어요.",
+          "naturalTranslation": "입구에 꽃을 장식했어요.",
+          "note": "공개 데모를 위해 새로 작성한 예문"
+        }
+      ],
+      "note": "새로 작성한 공개 데모 항목",
+      "tags": [
+        "demo"
+      ]
+    }
+  ]
+}

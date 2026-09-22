@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "3.0.0",
+  "documentType": "japaneseVocabulary",
+  "level": "n4",
+  "words": [
+    {
+      "id": "demo-window",
+      "lemma": "窓",
+      "reading": "まど",
+      "partOfSpeech": "noun",
+      "conjugationClass": "none",
+      "meanings": [
+        "창문"
+      ],
+      "examples": [
+        {
+          "id": "demo-window-e1",
+          "original": "窓のそばで休みます。",
+          "ruby": "｜窓《まど》のそばで｜休《やす》みます。",
+          "focusSurface": "窓",
+          "literalTranslation": "창문 곁에서 쉬어요.",
+          "naturalTranslation": "창문 곁에서 쉬어요.",
+          "note": "공개 데모를 위해 새로 작성한 예문"
+        }
+      ],
+      "note": "새로 작성한 공개 데모 항목",
+      "tags": [
+        "demo"
+      ]
+    },
+    {
+      "id": "demo-key",
+      "lemma": "鍵",
+      "reading": "かぎ",
+      "partOfSpeech": "noun",
+      "conjugationClass": "none",
+      "meanings": [
+        "열쇠"
+      ],
+      "examples": [
+        {
+          "id": "demo-key-e1",
+          "original": "白い箱に鍵があります。",
+          "ruby": "｜白《しろ》い｜箱《はこ》に｜鍵《かぎ》があります。",
+          "focusSurface": "鍵",
+          "literalTranslation": "흰 상자에 열쇠가 있어요.",
+          "naturalTranslation": "흰 상자에 열쇠가 있어요.",
+          "note": "공개 데모를 위해 새로 작성한 예문"
+        }
+      ],
+      "note": "새로 작성한 공개 데모 항목",
+      "tags": [
+        "demo"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  LockStar can normalize padding on the outermost RemoteViews root. Keep that
+  root transparent and place the real widget card one level deeper: the
+  included card retains its own compact content padding even when the host owns
+  the surrounding keyguard inset.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/starlight_word_widget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp" />
+</FrameLayout>
