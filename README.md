@@ -2,6 +2,14 @@
 
 일본어 학습 앱의 화면과 학습 흐름을 체험하는 Flutter/Android 소스 데모입니다. 다섯 주제에 두 개씩 새로 작성한 단어 총 10개, 문법 카드 2개, 회화 뉘앙스 카드 1개를 제공합니다. `데모 1~5`는 주제 묶음이며 JLPT 공식 급수나 난도 분류가 아닙니다. 내부 `n5`~`n1` 키는 기존 UI 구조와 호환되는 저장 식별자입니다.
 
+## 스크린샷
+
+Android 에뮬레이터에서 공개 데모를 실행해 촬영했습니다. 이미지를 누르면 원본 크기로 볼 수 있습니다.
+
+| 오늘 | 단어장 | 퀴즈 |
+| :---: | :---: | :---: |
+| <a href="docs/screenshots/home.png"><img src="docs/screenshots/home.png" width="240" alt="오늘의 단어와 뜻을 보여주는 카드 화면"></a> | <a href="docs/screenshots/vocabulary.png"><img src="docs/screenshots/vocabulary.png" width="240" alt="단어의 읽기·뜻·학습 상태를 보여주는 단어장"></a> | <a href="docs/screenshots/quiz.png"><img src="docs/screenshots/quiz.png" width="240" alt="일본어 단어를 학습하는 퀴즈 화면"></a> |
+
 ## 실행
 
 Flutter 3.41 계열 또는 Dart 3.11을 포함한 호환 Flutter SDK, Android SDK와 JDK 17을 준비하고 이 저장소 루트에서 실행합니다.
