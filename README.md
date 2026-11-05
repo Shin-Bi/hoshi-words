@@ -54,6 +54,16 @@ flutter build ios --release --no-codesign
 
 단어·예문·퀴즈·학습 기록은 공통 Flutter 화면을 사용합니다. **홈/잠금화면 위젯, 라이브 배경화면, 일본어 TTS는 현재 Android 전용**이며 이번 iOS 빌드 설정에 네이티브 기능 이식은 포함하지 않습니다. iOS 앱 아이콘은 기존 Android의 자체 별 벡터를 PNG로 변환한 것입니다.
 
+### SideStore 설치 시 앱 이름
+
+iOS 홈 화면 표시 이름은 `Hoshi Words`, 내부 번들 이름은 `HoshiWords`를 사용합니다. 일부 SideStore 버전이 한글 표시 이름을 Apple의 `appIdName`에 그대로 전달하면 `An invalid value ... was provided for the parameter 'appIdName'` 오류가 발생할 수 있어, 두 이름을 영문·숫자·공백으로 제한합니다. 앱 내부 한국어 화면과 기존 bundle ID는 유지합니다.
+
+```sh
+python3 -m unittest discover -s test/ios -p '*_test.py' -v
+```
+
+이는 이름 입력값에 대한 회귀 검사이며, Apple 계정 인증·실기기 서명·설치·갱신의 성공을 보장하는 검사는 아닙니다.
+
 ### 시뮬레이터 구성요소 불일치
 
 `CoreSimulator is out of date`가 나오면 앱 소스가 아니라 Xcode와 설치된 CoreSimulator 버전이 맞지 않는 상태입니다. Xcode에서 추가 구성요소 설치를 완료해야 하며, 관리자 인증이 필요할 수 있습니다. Apple Silicon Mac에서 ARM64 컴파일만 따로 검증하려면 다음 명령을 사용할 수 있습니다. 이 명령의 성공이 시뮬레이터 런타임 설치 완료를 뜻하지는 않습니다.
