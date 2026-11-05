@@ -68,40 +68,45 @@ void main() {
     expect((await service.speak(' ')).status, JapaneseTtsStatus.invalidText);
   });
 
-  testWidgets('demo opens and navigates to vocabulary and quiz', (
-    tester,
-  ) async {
-    tester.view.physicalSize = const Size(430, 932);
-    tester.view.devicePixelRatio = 1;
-    addTearDown(tester.view.resetPhysicalSize);
-    addTearDown(tester.view.resetDevicePixelRatio);
-    final controller = (await tester.runAsync(() async {
-      final words = await const VocabularyRepository().loadAll();
-      return StudyController.create(words);
-    }))!;
-    addTearDown(controller.dispose);
-    await tester.pumpWidget(VocabularyApp(controller: controller));
-    await tester.pumpAndSettle();
-    expect(find.byKey(const ValueKey('today-flash-card')), findsOneWidget);
-    await tester.tap(find.text('단어장').last);
-    await tester.pumpAndSettle();
-    expect(tester.takeException(), isNull);
-    await tester.tap(find.text('퀴즈').last);
-    await tester.pumpAndSettle();
-    final start = find.byKey(const ValueKey('quiz-start'));
-    await tester.scrollUntilVisible(
-      start,
-      300,
-      scrollable: find.descendant(
-        of: find.byKey(const ValueKey('quiz-settings-scroll')),
-        matching: find.byType(Scrollable),
-      ),
-    );
-    expect(tester.widget<FilledButton>(start).onPressed, isNotNull);
-    await tester.ensureVisible(start);
-    await tester.tap(start);
-    await tester.pumpAndSettle();
-    expect(find.byKey(const ValueKey('quiz-progress')), findsOneWidget);
-    expect(tester.takeException(), isNull);
-  });
+  testWidgets(
+    'demo opens and navigates to vocabulary and quiz',
+    (tester) async {
+      tester.view.physicalSize = const Size(430, 932);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+      final controller = (await tester.runAsync(() async {
+        final words = await const VocabularyRepository().loadAll();
+        return StudyController.create(words);
+      }))!;
+      addTearDown(controller.dispose);
+      await tester.pumpWidget(VocabularyApp(controller: controller));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('today-flash-card')), findsOneWidget);
+      await tester.tap(find.text('단어장').last);
+      await tester.pumpAndSettle();
+      expect(tester.takeException(), isNull);
+      await tester.tap(find.text('퀴즈').last);
+      await tester.pumpAndSettle();
+      final start = find.byKey(const ValueKey('quiz-start'));
+      await tester.scrollUntilVisible(
+        start,
+        300,
+        scrollable: find.descendant(
+          of: find.byKey(const ValueKey('quiz-settings-scroll')),
+          matching: find.byType(Scrollable),
+        ),
+      );
+      expect(tester.widget<FilledButton>(start).onPressed, isNotNull);
+      await tester.ensureVisible(start);
+      await tester.tap(start);
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('quiz-progress')), findsOneWidget);
+      expect(tester.takeException(), isNull);
+    },
+    variant: TargetPlatformVariant({
+      TargetPlatform.android,
+      TargetPlatform.iOS,
+    }),
+  );
 }
