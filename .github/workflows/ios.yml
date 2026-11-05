@@ -36,6 +36,8 @@ jobs:
         run: flutter analyze
       - name: Test
         run: flutter test
+      - name: Check SideStore app names
+        run: python3 -m unittest discover -s test/ios -p '*_test.py' -v
       - name: Build simulator
         run: flutter build ios --simulator --debug
       - name: Build unsigned release
